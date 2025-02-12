@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200, user-scalable=no">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Playlist Analyzer</title>
+  <link rel="icon" href="emojipng.com-12376447.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <h1 id = "lenos">JOONG</h1>
+    <div id="dark-mode-toggle">
+      <i class="icon">🌙</i>
+    </div>
+  </nav>
+  <h1 id="h2" class="center">YOUTUBE PLAYLIST LENGTH CALCULATOR</h1>
+  <hr>
+  <main>
+    <section class="input-section">
+    <div>
+        <p id ="t1" style="text-align: center; font-size: 1.7em; font-family: Quicksand;">Curious about the total length of a YouTube playlist? Let our tool instantly (and accurately) calculate the total length of all its videos combined!</p>
+    <ul>
+            <li>
+ <div id="t3"> Enter a YouTube playlist link to calculate the total watch time!</div></li> <br>
+        <li>
+ <div id="t2">You can analyze a single playlist link containing multiple videos.</div> </li>
+</ul>
+    </div>
+    
+      <textarea id="playlist-links"class="boxtext" placeholder="youtube.com/playlist?list=ID1"></textarea>
+
+      <div class="input">
+        <input type="number" class="input-field"  id="range-start" placeholder="Range start (1)">
+        <input type="number" class="input-field"  id="range-end" placeholder="Range end (500)">
+        <input type="text" class="input-field"  id="custom-speed" placeholder="Custom speed (e.g., 1.25)">
+        <button id="analyzebutton">Analyze</button>
+      </div>
+
+      <section  id="t3"><p>Optionally, enter a range of videos to analyze in the first link. Leave blank to analyze the entire playlist.
+        You can also enter a custom speed (like 2.25).</section></p>
+      </section>
+
+    <section class="results">
+      <p id="playlist-video-count">Playlist Video Count: 0</p>
+      <p id="total-duration">Total Duration: 0h 0m 0s</p>
+    </section>
+
+    <section class="info">
+        <h2>What is YouTube Playlist Length Calculator?</h2>
+        <p>Our YouTube playlist length calculator determines how long a playlist is by summing up the total length of its videos.</p>
+
+        <h2>How to Use</h2>
+        <ol>
+            <li>Copy the Playlist Link</li>
+            <li>Paste it into the input box above</li>
+            <li>Click "Analyze Playlist"</li>
+            <li>View the total duration and video breakdown</li>
+        </ol>
+
+        <h2>Features</h2>
+        <ul>
+            <li>100% Accurate Results</li>
+            <li>Excludes Private/Deleted Videos</li>
+            <li>Instant Calculation</li>
+            <li>Easy to Use</li>
+            <li>Free to Share</li>
+        </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
